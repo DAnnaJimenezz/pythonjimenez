@@ -18,4 +18,4 @@ for i in range (inicio, final,incrementar ):
         print(i,"Es multiplo de",n)
    
     else: 
-        print(i)
+        print(i)  
