@@ -1,16 +1,14 @@
 import math
 import random
-raiz=2
+raiz=[]
 
 tam=random.randint(5,10)
 lista= [random.randrange (100) for i in range (tam)]
-lista2=[j for j in lista]
 print(lista)
 
-par=[0 for j in lista if j%2==0]
+par=[j for j in lista if j%2==0]
 print(par)
 
-raiz=[j for j in lista if math.sqrt(raiz/lista)]
-print(raiz/lista)
-
-
+raiz= [num ** 0.5 for num in lista]
+print (raiz)
+ 
