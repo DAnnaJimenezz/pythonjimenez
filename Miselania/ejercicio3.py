@@ -71,7 +71,7 @@ if sum1 > sum2:
     print (f'La suma mayor entre las dos es lista: {sum1}')
 else:
     print (f'La suma mayor entre las dos es lista 2: {sum2}')
-
+j
 for j in lista2:
     if j > mayor: 
         mayor = j

@@ -23,7 +23,7 @@ def mayorLista(lista):
     return mayor
         
 def menorLista(lista):
-    menor=0
+    menor=10000
     for i in lista:
         if i < menor:
             menor = i
