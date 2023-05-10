@@ -1,5 +1,6 @@
 import random
 
+
 def llenarLista(tam,rango):
     lista=[]
     lista=[random.randrange(rango) for i in range(tam)]
@@ -15,18 +16,20 @@ def promedioLista(lista):
     return sumaLista(lista)/len(lista)
 
 def mayorLista(lista):
+    mayor=0
     for i in lista:
-        if i > lista:
-            mayorLista = i
-    return mayorLista
+        if i > mayor:
+            mayor = i
+    return mayor
         
 def menorLista(lista):
+    menor=0
     for i in lista:
-        if i < lista:
-            menorLista = i
-    return menorLista
+        if i < menor:
+            menor = i
+    return menor
         
-l1=llenarLista(35,50)
+l1=llenarLista(5,10)
 print(l1)
 
 print(sumaLista(l1))
