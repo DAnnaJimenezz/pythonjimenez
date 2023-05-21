@@ -21,15 +21,23 @@ def agregarEsIn2 (d1):
     d1 ["gallina"] = "hen"
     return d1
 
-def agregarInEs1 (d2):
+def agregarInEs3 (d2):
     d2 ["pig"] = "cerdo"
     d2 ["bear"] = "oso"
     return d2
 
-def agregarInEs2 (d2):
+def agregarInEs4 (d2):
     d2 ["rhinoceros"] = "rinoceronte"
     d2 ["horse"] = "caballo"
     return d2
+
+print (agregarEsIn1 (d1))
+print()
+print (agregarEsIn2 (d1))
+print()
+print (agregarInEs3 (d2))
+print()
+print (agregarInEs4 (d2))
 
 while True:
     print ('1-Actualizacion 1 primer diccionario')
