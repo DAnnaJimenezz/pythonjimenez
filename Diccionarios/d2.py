@@ -7,9 +7,9 @@ d2= {"lion": "leon",
      "toad": "sapo",
      "tortoise": "tortuga"}
 
-print (f'Este es el diccionario de español a ingles:', (d1))
+print (f'Este es el diccionario original de español a ingles:', (d1))
 print()
-print (f'Este es el diccionario de ingles a español:', (d2))
+print (f'Este es el diccionario original de ingles a español:', (d2))
 
 def agregarEsIn1 (d1):
     d1 ["cocodrilo"] = "crocodile"
@@ -31,26 +31,11 @@ def agregarInEs4 (d2):
     d2 ["horse"] = "caballo"
     return d2
 
-print (agregarEsIn1 (d1))
 print()
-print (agregarEsIn2 (d1))
+print("Actualizacion1 del primer dicionario:", agregarEsIn1(d1))
 print()
-print (agregarInEs3 (d2))
+print("Actualizacion2 del primer dicionario:", agregarEsIn2(d1))
 print()
-print (agregarInEs4 (d2))
-
-while True:
-    print ('1-Actualizacion 1 primer diccionario')
-    print ('2-Actualizacion 2 primer diccionario')
-    print ('3-Actualizacion 1 segundo diccionario')
-    print ('4-Actualizacion 2 segundo diccionario')
-    op = int(input("¿Que actualizacion desea realizar?:"))
-    if op == "1":
-        print ("La actualizacion 1 del primer dicionario es: ", agregarEsIn1 (d1))
-    elif op == "2":
-        print ("La actualizacion 2 del primer dicionario es: ", agregarEsIn2 (d1))
-    elif op == "3":
-        print ("La actualizacion 1 del segundo dicionario es: ", agregarEsIn1 (d2))
-    elif op == "4":
-        print ("La actualizacion 2 del segundo dicionario es: ", agregarEsIn2 (d2))
-
+print("Actualizacion1 del segundo dicionario:", agregarInEs3(d2))
+print()
+print("Actualizacion2 del segundo dicionario:", agregarInEs4(d2))
