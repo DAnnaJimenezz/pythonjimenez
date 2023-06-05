@@ -22,17 +22,14 @@ class Persona:
     
     def agregarCursos(self,curso):
         self.__curso.append(curso)
-
+        
     def getDatos(self):
-        return f'{self.__nombre}, {self.__documento}', {self.__cursos}
+        return self.__nombre, self.__documento, self.__cursos
 
 
-p=Persona('Ana', 123, (curso))
-print(p.getNombre())
-q=Persona('Pedro',321, (curso))
-print(q.getNombre())
+p=Persona('Ana', 53031992, [curso])
+print(p.getNombre ())
+
 
 p.getDatos()
 print(p.getDatos())
-q.getDatos()
-print(q.getDatos())
