@@ -1,9 +1,8 @@
-curso=input("Ingrese el nombre del curso:")
 class Persona:
-    def __init__(self, nombre, documento,cursos):
+    def __init__(self, nombre, documento):
         self.__nombre=nombre
         self.__documento=documento
-        self.__cursos=cursos
+        self.__cursos=[]
         
     def getNombre(self):
         return self.__nombre
@@ -21,15 +20,16 @@ class Persona:
         self.__cursos=cursos
     
     def agregarCursos(self,curso):
-        self.__curso.append(curso)
+        curso=input("Ingrese el nombre del curso:")
+        self.__cursos.append(curso)
+        return curso
         
     def getDatos(self):
         return self.__nombre, self.__documento, self.__cursos
 
 
-p=Persona('Ana', 53031992, [curso])
+p=Persona('Ana', 53031992, [Persona.agregarCursos])
 print(p.getNombre ())
-
 
 p.getDatos()
 print(p.getDatos())
