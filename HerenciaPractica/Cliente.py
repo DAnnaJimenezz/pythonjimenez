@@ -12,9 +12,9 @@ class Cliente:
     def setNombre(self,nombre):
         self.__nombre=nombre
     
-    def getTelefono(self,telefono):
+    def getTelefono(self):
         return self.__telefono
-    def setTelefono(self):
+    def setTelefono(self,telefono):
         self.__telefono=telefono
     
     def getCorreo(self):
