@@ -4,4 +4,4 @@ try:
     print (f'El indice ingresado si se encuentra en la lista, {l1}')
     
 except IndexError:
-    print ("No se puede econtrar el indice, por que no ahi nada en la lista")      
+    print ("No se puede econtrar el indice")      
