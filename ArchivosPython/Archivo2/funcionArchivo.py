@@ -8,5 +8,6 @@ def ValidaciondeArchivo (funcionArchivo):
     except IOError:
         print ("Se produjo un error")
         
-funcionArchivo = "C:\\pythonjimenez\\Archivos\\funcionPrueba.txt"
+#funcionArchivo = "C:\\pythonjimenez\\Archivos\\funcionPrueba.txt"
+funcionArchivo = "C:\\clon\\pythonjimenez\\ArchivosPython\\Archivo2\\funcionPrueba.txt"
 ValidaciondeArchivo (funcionArchivo)
